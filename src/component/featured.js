@@ -7,7 +7,7 @@ const Featured = ({featured}) => {
     <Carousel>
       {
         featured.map((feature, key) => (
-            <div key={feature._id}>
+            <div id='featured' key={feature._id}>
               <img alt='featured' src={feature.banner_card} />
             </div>
           )

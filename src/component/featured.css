@@ -2,14 +2,22 @@
   text-align: center;
   height: 160px;
   line-height: 160px;
-  background: #364d79;
   overflow: hidden;
 }
 
-.ant-carousel .slick-slide h3 {
-  color: #fff;
+.ant-carousel .slick-dots li button {
+  background: #888787 !important;
 }
 
-img {
+.ant-carousel .slick-slide h3 {
+  color: #565d69;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: #000;
+  opacity: 1;
+}
+#featured img {
   max-width: 100%;
+  margin: 0 auto;
 }
