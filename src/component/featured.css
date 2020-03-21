@@ -17,7 +17,12 @@
   background: #000;
   opacity: 1;
 }
-#featured img {
+
+.featured img {
   max-width: 100%;
   margin: 0 auto;
+}
+
+#featured {
+  width: 368px !important
 }

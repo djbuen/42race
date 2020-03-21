@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { Row, Col } from 'antd';
+
 import './events.css';
 import Featured from '../component/featured'
+import Event from '../component/event'
 
 const Events = () => {
   const [events, setEvents] = useState({
-    featured: []
+    featured: [],
+    startingSoon: []
   });
 
   useEffect(() => {
@@ -21,7 +25,16 @@ const Events = () => {
 
   return (
     <div className="App">
-      <Featured featured={events.featured}/>
+      <Row>
+        <Col>
+          <Featured featured={events.featured}/>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Event category={events.startingSoon}/>
+        </Col>
+      </Row>
     </div>
   );
 }

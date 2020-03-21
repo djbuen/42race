@@ -1,14 +1,14 @@
 import React from 'react';
-import './featured.css';
+import './event.css';
 import { Carousel } from 'antd';
 
-const Featured = ({featured}) => {
+const Event = ({category}) => {
   return (
     <Carousel>
       {
-        featured.map((feature, key) => (
+        category.map((feature, key) => (
             <div className='featured' key={feature._id}>
-              <img alt='featured' src={feature.banner_card} />
+              <img src={feature.banner_card} />
             </div>
           )
         )
@@ -17,4 +17,4 @@ const Featured = ({featured}) => {
   );
 }
 
-export default Featured;
+export default Event;
