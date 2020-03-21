@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { DatePicker } from 'antd';
+import Events from './container/events';
 
 function App() {
   return (
     <div className="App">
-      <DatePicker />
+      <Events />
     </div>
   );
 }
