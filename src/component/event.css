@@ -7,8 +7,13 @@ div#event {
     width: 1000px;
 }
 
-#event h3 {
+#event h2, h1 {
     text-transform: capitalize;
+}
+
+div .events .ant-carousel .slick-initialized .slick-slide {
+    width: 500px !important;
+    padding-right: 16px;
 }
 
 .event {

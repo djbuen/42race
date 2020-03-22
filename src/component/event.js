@@ -5,7 +5,7 @@ import { Carousel } from 'antd';
 const Event = ({category, title}) => {
   return (
     <div id='event'>
-        <h3>{category.length > 0 && title}</h3>
+        <h2>{category.length > 0 && title}</h2>
         <Carousel dots={false} draggable={true}>
             {
             category.map((race, key) =>{
