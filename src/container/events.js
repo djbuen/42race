@@ -43,7 +43,7 @@ const Events = () => {
 
   return (
     <div className="App">
-      <Row>
+      <Row className="featured">
         <Col>
           <Featured featured={events.featured}/>
         </Col>

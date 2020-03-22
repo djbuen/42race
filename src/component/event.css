@@ -2,6 +2,11 @@
     line-height: 0px;
 }
 
+div#event {
+    margin: 0 auto;
+    width: 1000px;
+}
+
 #event h3 {
     text-transform: capitalize;
 }

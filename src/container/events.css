@@ -1,7 +1,6 @@
-div.ant-row.events {
-    margin: 0 auto;
-    width: 1000px;
-}
+div.ant-row.featured {
+    margin-bottom: 20px;
+ }
 
 div .events .ant-carousel .slick-initialized .slick-slide {
     width: 500px !important;

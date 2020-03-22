@@ -4,16 +4,19 @@ import { Carousel } from 'antd';
 
 const Featured = ({featured}) => {
   return (
-    <Carousel arrows={true} draggable={true}>
-      {
-        featured.map((feature, key) => (
-            <div className='featured' key={feature._id}>
-              <img alt='featured' src={feature.banner_card} />
-            </div>
+    <div id='event'>
+      <h3>{'Featured'}</h3>
+      <Carousel autoplay={true} arrows={true} draggable={true}>
+        {
+          featured.map((feature, key) => (
+              <div className='featured' key={feature._id}>
+                <img alt='featured' src={feature.banner_card} />
+              </div>
+            )
           )
-        )
-      }
-    </Carousel>
+        }
+      </Carousel>
+    </div>
   );
 }
 
