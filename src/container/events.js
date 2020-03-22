@@ -23,6 +23,24 @@ const Events = () => {
     fetchEvents();
   }, []);
 
+  const generateEvents = events => {
+    const _events = []
+    Object.entries(events).forEach(([title, event]) =>{
+      if(typeof (event) === "object" && title != 'featured'){
+        _events.push((<Row className="events">
+              <Col>
+                <Event category={event} title={startCase(title)}/>
+              </Col>
+            </Row>))
+      }
+    })
+    return _events;
+  }
+
+  const startCase = str => {
+    return str.replace(/([A-Z]+)*([A-Z][a-z])/g, "$1 $2")
+  }
+
   return (
     <div className="App">
       <Row>
@@ -30,11 +48,9 @@ const Events = () => {
           <Featured featured={events.featured}/>
         </Col>
       </Row>
-      <Row className="events">
-        <Col>
-          <Event category={events.startingSoon} title="Starting Soon"/>
-        </Col>
-      </Row>
+      {
+        generateEvents(events)
+      }
     </div>
   );
 }

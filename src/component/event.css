@@ -1,3 +1,10 @@
+#event .ant-carousel .slick-slide {
+    line-height: 0px;
+}
+
+#event h3 {
+    text-transform: capitalize;
+}
 
 .event {
     display: inline-block !important;
@@ -23,10 +30,6 @@
 
 .slick-track .slick-active:nth-child(odd) {
     padding-right: 16px;
-}
-
-#event .ant-carousel .slick-slide {
-    line-height: 0px;
 }
 
 .bt {
