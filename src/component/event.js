@@ -3,10 +3,19 @@ import './event.css';
 import { Carousel } from 'antd';
 
 const Event = ({category, title}) => {
+  let carousel = React.createRef();
+  const next = () => {
+    carousel.next();
+  }
+  const previous = () => {
+    carousel.prev();
+  }
+
   return (
     <div id='event'>
         <h2>{category.length > 0 && title}</h2>
-        <Carousel dots={false} draggable={true}>
+        <span class="slick-arrow previous-button" onClick={previous}></span>
+        <Carousel ref={node => (carousel = node)} dots={false} draggable={true}>
             {
             category.map((race, key) =>{
                 return (
@@ -29,8 +38,8 @@ const Event = ({category, title}) => {
                     </div>)
                 })
             }
-
         </Carousel>
+        <span class="slick-arrow next-button" onClick={next}></span>
     </div>
   );
 }

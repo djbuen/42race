@@ -57,3 +57,33 @@ div .events .ant-carousel .slick-initialized .slick-slide {
     text-align: center;
     color: #333;
 }
+
+.next-button {
+    -webkit-appearance: button;
+    width: 43px!important;
+    height: 40px!important;
+    border: none!important;
+    background-image: url(https://s3-ap-southeast-1.amazonaws.com/web42-assets/images/icons/forward@2x.png)!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    right: 216px;
+    z-index: 1;
+    cursor: pointer;
+    top: 34%;
+    position: absolute;
+}
+
+.previous-button {
+    -webkit-appearance: button;
+    width: 43px!important;
+    height: 40px!important;
+    border: none!important;
+    background-image: url(https://s3-ap-southeast-1.amazonaws.com/web42-assets/images/icons/back@2x.png)!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    left: 198px;
+    z-index: 1;
+    cursor: pointer;
+    top: 34%;
+    position: absolute;
+}
