@@ -30,9 +30,9 @@ const Events = () => {
           <Featured featured={events.featured}/>
         </Col>
       </Row>
-      <Row>
+      <Row className="events">
         <Col>
-          <Event category={events.startingSoon}/>
+          <Event category={events.startingSoon} title="Starting Soon"/>
         </Col>
       </Row>
     </div>

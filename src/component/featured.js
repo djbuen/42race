@@ -4,7 +4,7 @@ import { Carousel } from 'antd';
 
 const Featured = ({featured}) => {
   return (
-    <Carousel>
+    <Carousel arrows={true} draggable={true}>
       {
         featured.map((feature, key) => (
             <div className='featured' key={feature._id}>

@@ -1,0 +1,46 @@
+
+.event {
+    display: inline-block !important;
+}
+
+.event img {
+    width: 100%;
+}
+
+.race-title {
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+
+.race-date {
+    font-size: 12px;
+    line-height: 16px;
+    color: #333;
+}
+
+.slick-track .slick-active:nth-child(odd) {
+    padding-right: 16px;
+}
+
+#event .ant-carousel .slick-slide {
+    line-height: 0px;
+}
+
+.bt {
+    text-transform: capitalize;
+    line-height: 20px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    border-radius: 32px;
+    padding: 6px 9px;
+    display: inline-block;
+    font-family: MetropolisMedium;
+    font-size: 10px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
