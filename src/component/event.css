@@ -1,5 +1,6 @@
 #event .ant-carousel .slick-slide {
     line-height: 0px;
+    min-height: 370px;
 }
 
 div#event {
@@ -14,6 +15,7 @@ div#event {
 div .events .ant-carousel .slick-initialized .slick-slide {
     width: 500px !important;
     padding-right: 16px;
+    min-height: 370px;
 }
 
 .event {
