@@ -26,7 +26,7 @@ const Events = () => {
   const generateEvents = events => {
     const _events = []
     Object.entries(events).forEach(([title, event]) =>{
-      if(typeof (event) === "object" && title != 'featured'){
+      if(typeof (event) === "object" && title !== 'featured'){
         _events.push((<Row className="events">
               <Col>
                 <Event category={event} title={startCase(title)}/>

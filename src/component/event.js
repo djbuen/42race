@@ -21,7 +21,7 @@ const Event = ({category, title}) => {
                 return (
                     <div className='event' key={race._id}>
                         <div>
-                            <img src={race.banner_card} />
+                            <img alt="event-banner" src={race.banner_card} />
                         </div>
                         <p className={'race-title'}>{race.race_name}</p>
                         <p className={'race-date'}>{race.racePeriod}</p>
