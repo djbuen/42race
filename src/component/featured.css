@@ -1,3 +1,8 @@
+#featured .ant-carousel .slick-slide {
+  line-height: 0px;
+  min-height: 500px;
+}
+
 .ant-carousel .slick-slide {
   text-align: center;
   height: 160px;

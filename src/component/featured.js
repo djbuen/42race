@@ -4,7 +4,7 @@ import { Carousel } from 'antd';
 
 const Featured = ({featured}) => {
   return (
-    <div id='event'>
+    <div id='featured'>
       <h1>{featured.length > 0 && 'Events'}</h1>
       <Carousel autoplay={true} arrows={true} draggable={true}>
         {
